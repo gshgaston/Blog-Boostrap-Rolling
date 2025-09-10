@@ -5,7 +5,8 @@
 }
 
 body {
-    background: linear-gradient(135deg, #2d0000 0%, #7b0202 35%, #bd0000 70%, #ff0000 100%);
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #282F32 0%, #371211 25%, #7D1416 50%, #C0191F 75%, #E51E1B 100%);
     min-height: 100vh;
 }
 
@@ -17,8 +18,8 @@ body {
 
 
 .btn-brand {
-    --brand: #bd0000;
-    --brand-hover: #ff0000;
+    --brand: #C0191F;
+    --brand-hover: #E51E1B;
     background: var(--brand);
     border: 1px solid var(--brand);
     color: #fff;
@@ -38,24 +39,26 @@ body {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(40, 47, 50, 0.9);
+    /* #282F32 con transparencia */
     backdrop-filter: blur(10px) saturate(140%);
     -webkit-backdrop-filter: blur(10px) saturate(140%);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(229, 30, 27, 0.4);
+    /* borde con el rojo vivo */
     border-radius: 16px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, .35);
-    color: #fff;
+    color: #f1f1f1;
 }
 
 .card h3,
 .card strong {
-    color: #ff5a5a;
+    color: #E51E1B;
 }
 
 .list-group-item {
     background: transparent;
-    border-color: rgba(255, 255, 255, 0.18);
-    color: #f5f5f5;
+    border-color: rgba(229, 30, 27, 0.25);
+    color: #ddd
 }
 
 .form-control {
