@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====== Fondo login (degradé invertido) ====== */
+.bg-hero-inverse {
+    background: radial-gradient(1000px 500px at 85% 15%, rgba(224, 6, 6, 0.14) 0%, rgba(224, 6, 6, 0) 60%),
+        linear-gradient(135deg, #E51E1B 0%, #C0191F 18%, #7D1416 45%, #371211 70%, #282F32 100%);
+    min-height: 100vh;
+}
+
+/* ====== Tarjeta de autenticación (glass/dark) ====== */
+.auth-card {
+    background: rgba(40, 47, 50, 0.65);
+    border: 1px solid rgba(255, 255, 255, .12);
+    backdrop-filter: blur(10px) saturate(140%);
+    -webkit-backdrop-filter: blur(10px) saturate(140%);
+    border-radius: 16px;
+    color: #f5f5f5;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .35);
+}
+
+/* Imagen derecha */
+.auth-image {
+    height: 520px;
+}
+
+@media (max-width: 991.98px) {
+    .auth-image {
+        height: 300px;
+    }
+}
+
+/* ====== Inputs en dark glass ====== */
+.form-control {
+    background: rgba(0, 0, 0, .25);
+    border: 1px solid rgba(255, 255, 255, .25);
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, .7);
+}
+
+.form-control:focus {
+    border-color: #E51E1B;
+    box-shadow: 0 0 0 .2rem rgba(229, 30, 27, .25);
+}
+
+/* ====== Botón de marca (rojo) ====== */
+.btn-brand {
+    --brand: #C0191F;
+    --brand-hover: #E51E1B;
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background: var(--brand-hover);
+    border-color: var(--brand-hover);
+}
+
+/* ====== Botones sociales ====== */
+.btn-google,
+.btn-facebook {
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .18);
+    color: #f5f5f5;
+}
+
+.btn-google:hover,
+.btn-facebook:hover {
+    background: rgba(255, 255, 255, .15);
+}
+
+.social-dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+/* ====== Modal (glass) ====== */
+.modal-glass {
+    background: rgba(40, 47, 50, 0.9);
+    color: #f5f5f5;
+    border: 1px solid rgba(255, 255, 255, .12);
+    backdrop-filter: blur(10px);
+}
+
+.btn-close-white {
+    filter: invert(1);
+}
+
+.card-logo {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 16px;
+}
