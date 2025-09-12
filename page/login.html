@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Code Freaky</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login — Code Freaky</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tu CSS -->
     <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body class="bg-hero-inverse text-white">
-    <main class="container py-5 ">
-        <div class="row g-5 align-items-stretch">
+    <main class="container py-5 min-vh-100 d-flex align-items-center">
+        <div class="row g-5 align-items-stretch w-100">
 
             <!-- Columna izquierda: Formulario -->
-            <div class="col-12 col-lg-6 d-flex">
-                <div class="auth-card h-100 w-100 p-4 p-md-5">
+            <div class="col-12 col-lg-6">
+                <div class="auth-card p-4 p-md-5 h-100">
                     <h1 class="h3 fw-bold mb-1">Bienvenido de nuevo</h1>
                     <p class="text-secondary mb-4">Iniciá sesión para continuar</p>
 
-                    <!-- Botones google face -->
+                    <!-- Social -->
                     <div class="d-grid gap-2 mb-3">
                         <button class="btn btn-google fw-semibold">
                             <span class="social-dot bg-white me-2"></span>
@@ -42,7 +45,7 @@
                     <form novalidate>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+                            <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
                         </div>
 
                         <div class="mb-2">
@@ -53,31 +56,26 @@
                                     ¿Olvidaste tu contraseña?
                                 </a>
                             </div>
-                            <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                            <input type="password" id="password" class="form-control" placeholder="••••••••" required>
                         </div>
 
                         <div class="d-flex align-items-center justify-content-between mb-4">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="remember">
-                                <label class="form-check-label" for="remember">
-                                    Recordarme
-                                </label>
+                                <input class="form-check-input" type="checkbox" id="remember">
+                                <label class="form-check-label" for="remember">Recordarme</label>
                             </div>
                             <a href="../index.html" class="small link-secondary">Volver al inicio</a>
                         </div>
 
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-brand btn-lg fw-semibold">Ingresar</button>
-                        </div>
+                        <button type="submit" class="btn btn-brand btn-lg fw-semibold w-100">Ingresar</button>
                     </form>
                 </div>
             </div>
 
             <!-- Columna derecha: Imagen -->
-            <div class="col-12 col-lg-6 d-flex">
-                <div
-                    class="card-logo h-100 w-100 d-flex align-items-center justify-content-center rounded-4 overflow-hidden">
-                    <img src="./img/techblogpng.png" class="w-100 h-100 object-fit-cover" alt="IlustraciónPng">
+            <div class="col-12 col-lg-6">
+                <div class="rounded-4 overflow-hidden shadow-lg h-100" style="min-height: 320px;">
+                    <img src="./img/techblogpng.png" class="w-100 h-100 object-fit-cover" alt="Ilustración Tech Blog">
                 </div>
             </div>
 
@@ -101,7 +99,7 @@
                     </ol>
                     <form>
                         <label for="recoveryEmail" class="form-label">Correo de recuperación</label>
-                        <input type="email" class="form-control" id="recoveryEmail" placeholder="tu@email.com">
+                        <input type="email" id="recoveryEmail" class="form-control" placeholder="tu@email.com">
                     </form>
                 </div>
                 <div class="modal-footer border-0">
@@ -111,6 +109,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
