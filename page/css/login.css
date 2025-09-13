@@ -1,4 +1,4 @@
-/* Reset mínimo */
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== Fondo (degradé invertido) ===== */
+
 .bg-hero-inverse {
     background:
         radial-gradient(1000px 500px at 85% 15%, rgba(224, 6, 6, 0.14) 0%, rgba(224, 6, 6, 0) 60%),
@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
 }
 
-/* ===== Tarjeta glass/dark ===== */
+
 .auth-card {
     background: rgba(40, 47, 50, .65);
     border: 1px solid rgba(255, 255, 255, .12);
@@ -26,7 +26,7 @@ body {
     box-shadow: 0 12px 30px rgba(0, 0, 0, .35);
 }
 
-/* Inputs en glass */
+
 .form-control {
     background: rgba(0, 0, 0, .25);
     border: 1px solid rgba(255, 255, 255, .25);
@@ -42,7 +42,7 @@ body {
     box-shadow: 0 0 0 .2rem rgba(229, 30, 27, .25);
 }
 
-/* Botón de marca */
+
 .btn-brand {
     --brand: #C0191F;
     --brand-hover: #E51E1B;
@@ -56,7 +56,7 @@ body {
     border-color: var(--brand-hover);
 }
 
-/* Botones sociales */
+
 .btn-google,
 .btn-facebook {
     background: rgba(255, 255, 255, .08);
@@ -69,14 +69,7 @@ body {
     background: rgba(255, 255, 255, .15);
 }
 
-.social-dot {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-}
 
-/* Modal glass */
 .modal-glass {
     background: rgba(40, 47, 50, .9);
     color: #f5f5f5;
@@ -91,7 +84,6 @@ body {
 /* Responsive tweaks */
 @media (max-width: 991.98px) {
 
-    /* Reduce padding en la tarjeta en tablets/phones */
     .auth-card {
         padding: 1.25rem !important;
     }
@@ -99,8 +91,14 @@ body {
 
 @media (max-width: 575.98px) {
 
-    /* Ajuste tipográfico para móviles chicos */
     .auth-card h1 {
         font-size: 1.25rem;
     }
+}
+
+.btn-google span,
+.btn-facebook span{
+    margin-left: 8px;
+    flex: 1;
+    text-align: left;
 }
