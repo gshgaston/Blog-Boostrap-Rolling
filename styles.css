@@ -1,5 +1,160 @@
-*  {
+* { 
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/* BASE DE STYLES */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar custom hover */
+.navbar-nav .nav-link:hover {
+    color: #e50914 !important;
+    font-weight: 500;
+}
+
+/* Login Button */
+.navbar .btn-danger {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Hero Carousel */
+#heroCarousel .carousel-item {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#heroCarousel h1,
+#heroCarousel p {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar titles */
+aside h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Sidebar lists */
+aside ul li {
+    margin-bottom: 0.5rem;
+    color: #db0c0c;
+    cursor: pointer;
+}
+
+/* < !-- ESTILO DEL SIDEBAR LINKS --> */
+.sidebar-link {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+    transition: color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    color: red;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar-link {
+        text-align: center;
+    }
+}
+
+/* Blog posts */
+.blog-post {
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Footer */
+footer h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    margin-bottom: 0.1rem;
+    color: #e50914;
+}
+
+
+footer li {
+    color: red;
+}
+
+/* Red icon links */
+footer .fa-brands,
+footer .fa-solid {
+    transition: transform 0.3s ease;
+}
+
+footer .fa-brands:hover,
+footer .fa-solid:hover {
+    transform: scale(1.2);
+    color: #ffffff !important;
+}
+
+/* Centrado de columna 3 (MENÚ) solo en mobile */
+@media (max-width: 767.98px) {
+    .footer-menu {
+        margin: 0 auto;
+        text-align: center !important;
+    }
+}
+
+
+/* ----------------------------
+   RESPONSIVE DESIGN
+----------------------------- */
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    footer .row>div {
+        text-align: center !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 567.98px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .blog-post {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blog-post img {
+        margin-top: 1rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .row>div {
+        margin-bottom: 2rem;
+    }
 }

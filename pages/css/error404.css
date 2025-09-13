@@ -5,23 +5,35 @@
 }
 
 body {
-    background-color: #9c0202;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* color: #343a40; */
+    background-color: #cecece;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
+/* Aplica a todo el documento */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Elimina scroll */
+}
 
+/* Contenedor central (ya lo usás en tu HTML) */
 .page-central {
-    text-align: center;
-    /* Centrar el texto */
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    /* Asegurarse de que ocupe toda la altura de la ventana */
 }
+
+/* Opcional: evita scroll si la imagen es muy grande */
+.icon-container img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* El .error-wrapper será el centro de nuestra página */
 .error-wrapper {
     max-width: 500px;
@@ -55,7 +67,7 @@ body {
     font-weight: 700px;
     /* Negrita */
     /* color: #343a40; */
-    color: white;
+    color: rgb(44, 44, 44);
     /* Color oscuro */
     margin-bottom: 0;
     line-height: 1;
@@ -68,14 +80,14 @@ body {
     font-weight: 400;
     /* Normal */
     /* color: #343a40; */
-    color: white;
+    color: rgb(77, 76, 76);
     margin-bottom: 20px;
 }
 
 .explanation-text {
     font-size: 0.95em;
     /* color: #6c757d; */
-    color: white;
+    color: rgb(76, 76, 76);
     /* Un gris más suave para el texto explicativo */
     line-height: 1.6;
     margin-bottom: 25px;
