@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Fondo */
+.bg-hero-inverse {
+    background:
+        radial-gradient(1000px 500px at 85% 15%, rgba(224, 6, 6, 0.14) 0%, rgba(224, 6, 6, 0) 60%),
+        linear-gradient(135deg, #E51E1B 0%, #C0191F 18%, #7D1416 45%, #371211 70%, #282F32 100%);
+    min-height: 100vh;
+}
+
+/* Card formulario */
+.auth-card {
+    background: rgba(40, 47, 50, .65);
+    border: 1px solid rgba(255, 255, 255, .12);
+    backdrop-filter: blur(10px) saturate(140%);
+    -webkit-backdrop-filter: blur(10px) saturate(140%);
+    border-radius: 16px;
+    color: #f5f5f5;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .35);
+}
+
+/* Inputs */
+.form-control {
+    background: rgba(0, 0, 0, .25);
+    border: 1px solid rgba(255, 255, 255, .25);
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, .7);
+}
+
+.form-control:focus {
+    border-color: #E51E1B;
+    box-shadow: 0 0 0 .2rem rgba(229, 30, 27, .25);
+}
+
+/* Botón rojo */
+.btn-brand {
+    --brand: #C0191F;
+    --brand-hover: #E51E1B;
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background: var(--brand-hover);
+    border-color: var(--brand-hover);
+}
+
+/* Botones redes */
+.btn-google,
+.btn-facebook {
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .18);
+    color: #f5f5f5;
+}
+
+.btn-google:hover,
+.btn-facebook:hover {
+    background: rgba(255, 255, 255, .15);
+}
+
+.btn-google span,
+.btn-facebook span {
+    margin-left: 8px;
+    flex: 1;
+    text-align: left;
+}
+
+/* Modal glass */
+.modal-glass {
+    background: rgba(40, 47, 50, .9);
+    color: #f5f5f5;
+    border: 1px solid rgba(255, 255, 255, .12);
+    backdrop-filter: blur(10px);
+}
+
+.btn-close-white {
+    filter: invert(1);
+}
+
+/* ==== Imagen derecha ==== */
+.login-visual {
+    border-radius: 16px;
+}
+
+.login-visual-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Desktop: imagen igual de alta que el login */
+@media (min-width: 992px) {
+    .login-visual {
+        height: 100%;
+    }
+
+    .login-visual-img {
+        object-fit: cover;
+    }
+}
+
+/* Mobile: centrado y sin scroll */
+@media (max-width: 991.98px) {
+    .login-visual {
+        height: clamp(220px, 35vh, 420px);
+    }
+
+    .login-visual-img {
+        object-fit: contain;
+    }
+}
+
+.login-visual-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== MOBILE (centrado y sin scroll extra) ===== */
+@media (max-width: 991.98px) {
+
+    /* menos padding vertical para evitar scroll */
+    main.container {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    /* alto controlado del bloque de imagen; sin recortes */
+    .login-visual {
+        height: clamp(180px, 28vh, 320px);
+    }
+
+    .login-visual-img {
+        object-fit: contain;
+    }
+
+    /* por si el card no se percibe centrado */
+    .auth-card {
+        margin-inline: auto;
+    }
+}
+
+/* ===== DESKTOP (misma altura que el login) ===== */
+@media (min-width: 992px) {
+
+    /* en desktop ambas tarjetas ocupan el alto total de la fila */
+    .auth-card,
+    .login-visual {
+        height: 100%;
+    }
+
+    /* la imagen se recorta agradablemente para igualar altura */
+    .login-visual-img {
+        object-fit: cover;
+    }
+}
+
+.login-visual {
+    min-height: clamp(200px, 26vh, 320px);
+}
+
+.login-visual-img {
+    object-fit: cover;
+}
+
+@media (min-width: 992px) {
+    .login-visual {
+        min-height: 100%;
+        /* iguala la altura del form en desktop */
+    }
+}
