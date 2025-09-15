@@ -85,3 +85,23 @@ button {
 button:hover {
   box-shadow: 0 0 10px 3px #f44336; 
 }
+@media (max-width: 576px) {
+    .hero {
+        min-height: 150px;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    form {
+        padding: 15px;
+    }
+    .card h5 {
+        font-size: 1.1rem;
+    }
+    .card p {
+        font-size: 0.9rem;
+    }
+    footer img {
+        width: 140px;
+    }
+}
