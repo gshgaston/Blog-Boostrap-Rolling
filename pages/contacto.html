@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 fixed-top">
+
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="#">
+                <img src="../img/logo-nav.png" alt="logo" class="me-2" style="max-height: 60px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"><i class="bi bi-house"></i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">QUIENES SOMOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">GALERÍA DE IMÁGENES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">SUSCRIPCIONES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACTO</a></li>
+                </ul>
+                <a href="#" class="btn btn-danger">INICIAR SESIÓN</a>
+            </div>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="titulo">
+            <h1>Contáctanos</h1>
+        </div>
+    </div>
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12 col-lg-6 mb-4">
+                <form action="">
+                    <div class="Informacion">
+                        <h2>Ponte en contacto</h2>
+                    </div>
+                    <div class="text-secondary">
+                        <p>Completa el formulario y nos pondremos en contacto a la brevedad.</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name-form" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name-form" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" required>
+                    </div>
+                    <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+                        <option value="" selected disabled>Seleccione un tema</option>
+                        <option value="1">Colaboración o propuesta</option>
+                        <option value="2">Publicidad o patrocinio</option>
+                        <option value="3">Sugerencia de contenido</option>
+                        <option value="4">Problema técnico o soporte</option>
+                        <option value="5">Trabaja con nosotros</option>
+                        <option value="6">Otro</option>
+                    </select>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required
+                            maxlength="100"></textarea>
+                    </div>
+                    <button class="btn btn-danger">Enviar</button>
+                </form>
+            </div>
+            
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="mapa h-100">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.110853028275!2d-65.20970432380207!3d-26.83642627669279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0e8d3f160f%3A0xaf25f4de8ee29e12!2sGral.%20Jos%C3%A9%20Mar%C3%ADa%20Paz%20576%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1757634164531!5m2!1ses-419!2sar"
+                        width="100%" height="100%" style="min-height:350px; border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center mt-4">
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card h-100 p-3 shadow-sm">
+                    <i class="bi bi-telephone-inbound-fill text-danger fs-2 mb-2"></i>
+                    <h5>Teléfono</h5>
+                    <p>+54 9 381 661-2976</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card h-100 p-3 shadow-sm">
+                    <i class="bi bi-envelope-fill text-danger fs-2 mb-2"></i>
+                    <h5>Email</h5>
+                    <p>contacto@techblog.com</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card h-100 p-3 shadow-sm">
+                    <i class="bi bi-geo-alt-fill text-danger fs-2 mb-2"></i>
+                    <h5>Ubicación</h5>
+                    <p>Tucumán, Argentina</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="bg-black text-light py-4">
+        <div class="container">
+            <div class="row align-items-start text-center text-md-start">
+
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <img src="../img/logo-footer.png" alt="TechBlog" width="180" class="mb-2">
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <h5 class="fw-bold text-center">Nuestras redes sociales</h5>
+                    <div class="d-flex justify-content-center gap-3 mt-2">
+                        <a href="#"><i class="bi bi-facebook text-danger fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-danger fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter text-danger fs-5"></i></a>
+                        <a href="#"><i class="bi bi-youtube text-danger fs-5"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp text-danger fs-5"></i></a>
+                        <a href="#"><i class="bi bi-telegram text-danger fs-5"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <h5 class="fw-bold">Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-danger text-decoration-none"><i class="bi bi-house"></i> Inicio</a>
+                        </li>
+                        <li><a href="#" class="text-danger text-decoration-none">Políticas de privacidad</a></li>
+                        <li><a href="#" class="text-danger text-decoration-none">Aviso legal</a></li>
+                        <li><a href="#" class="text-danger text-decoration-none">Acerca de nosotros</a></li>
+                        <li><a href="#" class="text-danger text-decoration-none">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary">
+
+            <div class="text-center pb-3">
+                <small class="text-secondary">&copy; 2025 TechBlog. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
