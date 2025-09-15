@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechBlog - Tú Blog de Tecnología</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/01 Isotipo full color.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="font-family: 'Roboto', sans-serif; padding-top:95px;">
+
+<header>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-dark mx-lg-0 mx-auto" href="#">
+        <img src="img/01 Logo Full Color.png" alt="Logo de TechBlog" class="me-2" style="max-height: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end text-lg-end text-center" id="navbarNav">
+        <ul class="navbar-nav me-lg-3 mx-auto">
+          <li class="nav-item"><a class="nav-link text-dark" href="index.html"><i class="fas fa-home"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/quienessomos.html">QUIENES SOMOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/galeria-de-img.html">GALERÍA DE IMÁGENES</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/suscripciones.html">SUSCRIPCIONES</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
+        </ul>
+        <a href="./pages/login.html" class="btn btn-danger d-lg-inline-block mx-lg-0 mx-auto">INICIAR SESIÓN</a>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+</header>
+
+<!-- SECCIÓN PRINCIPAL -->
+  <!-- HERO SLIDER -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <!-- SLIDE 1 -->
+      <div class="carousel-item active position-relative">
+        <img
+          src="https://png.pngtree.com/background/20231030/original/pngtree-bold-and-striking-3d-illustration-of-a-technology-infused-abstract-red-picture-image_5786389.jpg"
+          class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Fondo Slide 1">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="display-3 fw-bold text-white">TECH BLOG</h1>
+          <p class="lead text-white">TODAS LAS ÚLTIMAS TENDENCIAS EN EL MUNDO IA</p>
+          <button class="btn btn-light mt-4" data-bs-toggle="modal" data-bs-target="#infoModal">Ver más</button>
+        </div>
+      </div>
+      <!-- SLIDE 2 -->
+      <div class="carousel-item position-relative">
+        <img src="https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg"
+          class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Slide 2">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="display-3 fw-bold text-white">INNOVACIÓN CONSTANTE</h1>
+          <p class="lead text-white">Explorando el futuro de la tecnología</p>
+          <button class="btn btn-light mt-4" data-bs-toggle="modal" data-bs-target="#infoModal">Ver más</button>
+        </div>
+      </div>
+      <!-- SLIDE 3 -->
+      <div class="carousel-item position-relative">
+        <img src="https://images.pexels.com/photos/5473960/pexels-photo-5473960.jpeg"
+          class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Slide 3">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="display-3 fw-bold text-white">COMUNIDAD GLOBAL</h1>
+          <p class="lead text-white">Desarrolladores, hackers y visionarios</p>
+          <button class="btn btn-light mt-4" data-bs-toggle="modal" data-bs-target="#infoModal">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END HERO SLIDER -->
+
+  <!-- MODAL -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="infoModalLabel">Más Información</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          ¡Bienvenido a Tech Blog! Aquí encontrarás análisis, tendencias y contenido exclusivo sobre inteligencia
+          artificial, tecnología y más.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <section class="container my-4">
+    <div class="row align-items-stretch" style="min-height: 100%;">
+      <!-- SIDEBAR + PUBLICIDAD -->
+      <div class="col-lg-6 d-flex flex-column h-100">
+        <div class="row flex-grow-1">
+         
+          <!-- CATEGORÍAS -->
+          <div class="col-lg-6">
+            <div class="bg-white p-3 border h-100">
+              <h6 class="text-danger fw-bold text-center text-lg-start">CATEGORÍAS</h6>
+              <ul class="list-unstyled small mb-0 text-center text-lg-start">
+                <li><a href="./pages/error404.html" class="sidebar-link">Developers</a></li>
+                <li><a href="./pages/error404.html" class="sidebar-link">Gaming</a></li>
+                <li><a href="./pages/error404.html" class="sidebar-link">Tech News</a></li>
+                <li><a href="./pages/error404.html" class="sidebar-link">IA Generativa</a></li>
+                <li><a href="./pages/error404.html" class="sidebar-link">Blockchain</a></li>
+                <li><a href="./pages/error404.html" class="sidebar-link">Biotech</a></li>
+                <li><a href="./pages/error404.html" class="sidebar-link">Python</a></li>
+                <li><a href="./pages/error404.html" class="sidebar-link">VS Code</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- END CATEGORÍAS -->
+
+          <!-- PUBLICIDAD -->
+          <div class="col-lg-6 d-flex mb-mobile-post-gap mt-mobile-gap">
+            <div class="bg-white border w-100 d-flex align-items-center justify-content-center p-0">
+              <img src="https://i.pinimg.com/736x/84/2a/10/842a1049724bf438d6d2df75999fb845.jpg" class="img-fluid w-100"
+                style="object-fit: cover; height: 100%;" alt="Publicidad Alienware">
+            </div>
+          </div>
+        </div>
+        <!-- END PUBLICIDAD -->
+
+        <!-- BUSCADOR -->
+        <div class="row mt-auto">
+          <div class="col-12">
+            <div class="bg-white p-3 border mt-2">
+              <h6 class="text-danger fw-bold">BUSCADOR</h6>
+              <p class="small">Encuentra el artículo que te interesa</p>
+              <input type="text" class="form-control mb-2" placeholder="Título del artículo">
+              <input type="date" class="form-control mb-2">
+              <select class="form-select mb-2">
+                <option>Categoría</option>
+                <option>Developers</option>
+                <option>Gaming</option>
+                <option>Tech News</option>
+                <option>IA Generativa</option>
+                <option>Blockchain</option>
+                <option>Biotech</option>
+                <option>Python</option>
+                <option>VS Code</option>
+              </select>
+              <a href="./pages/error404.html" class="btn btn-danger w-100">Buscar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END BUSCADOR -->
+
+      <!-- COLUMNA DERECHA -->
+      <div class="col-lg-6 d-flex flex-column h-100">
+        <div class="d-flex flex-column h-100 gap-2">
+
+          <!-- POST 1 -->
+          <a href="./pages/error404.html" class="text-decoration-none text-dark">
+            <div class="bg-white p-3 border d-flex mt-mobile-gap-post">
+              <div class="flex-grow-1 pe-3">
+                <small class="text-danger fw-bold">TECH NEWS</small>
+                <h6 class="mb-1">Llegó el Iphone 17 Pro Max</h6>
+                <p class="mb-1 small">¿Lo amás o lo odiás?</p>
+                <p class="small text-muted">#tecnología #tecno #iphone #apple #nuevo #17promax</p>
+                <div class="d-flex align-items-center gap-3 small text-muted">
+                  <span><i class="fa-regular fa-comment"></i> Comentarios</span>
+                  <span><i class="fa-regular fa-face-smile"></i> Reacciones</span>
+                  <span><i class="fa-regular fa-clock"></i> Leído 1 min</span>
+                </div>
+              </div>
+              <div style="width: 150px;">
+                <img
+                  src="https://andro4all.com/hero/2025/09/iphone-17-prio.jpg?width=768&aspect_ratio=16:9&format=nowebp"
+                  class="img-fluid rounded h-100 object-fit-cover" alt="iPhone" style="width: 150px;" />
+              </div>
+            </div>
+          </a>
+          <!-- END POST 1 -->
+
+          <!-- POST 2 -->
+          <a href="./pages/entrada.html" class="text-decoration-none text-dark">
+            <div class="bg-white p-3 border d-flex">
+              <div class="flex-grow-1 pe-3">
+                <small class="text-danger fw-bold">TECH CODE</small>
+                <h6 class="mb-1">MacBook Pro M1 en el 2025</h6>
+                <p class="mb-1 small">La mejor opción para desarrolladores.</p>
+                <p class="small text-muted">#apple #code #macbook #pro #m1 #dev</p>
+                <div class="d-flex align-items-center gap-3 small text-muted">
+                  <span><i class="fa-regular fa-comment"></i> Comentarios</span>
+                  <span><i class="fa-regular fa-face-smile"></i> Reacciones</span>
+                  <span><i class="fa-regular fa-clock"></i> Leído 2 min</span>
+                </div>
+              </div>
+              <div style="width: 150px;">
+                <img src="https://undertec.store/wp-content/uploads/2021/01/macbook-pro-m1-undertaker-tec-store-4.jpg"
+                  class="img-fluid rounded h-100 object-fit-cover"
+                  alt="MacBook Pro M1 - la mejor opción para desarrolladores" style="width: 150px;" />
+              </div>
+            </div>
+          </a>
+          <!-- END POST 2 -->
+
+          <!-- POST 3 -->
+          <a href="./pages/error404.html" class="text-decoration-none text-dark">
+            <div class="bg-white p-3 border d-flex">
+              <div class="flex-grow-1 pe-3">
+                <small class="text-danger fw-bold">TECH IA</small>
+                <h6 class="mb-1">Google IA Studio en problemas</h6>
+                <p class="mb-1 small">Los chinos pusieron en jaque a Google IA Studio.</p>
+                <p class="small text-muted">#tech #ia #google #studio</p>
+                <div class="d-flex align-items-center gap-3 small text-muted">
+                  <span><i class="fa-regular fa-comment"></i> Comentarios</span>
+                  <span><i class="fa-regular fa-face-smile"></i> Reacciones</span>
+                  <span><i class="fa-regular fa-clock"></i> Leído 3 min</span>
+                </div>
+              </div>
+              <div style="width: 150px;">
+                <img src="https://testplanet.com/wp-content/uploads/2025/07/138a4be0-5c94-4603-b973-fae10417f27d.png"
+                  class="img-fluid rounded h-100 object-fit-cover" alt="Google IA" style="width: 150px;" />
+              </div>
+            </div>
+          </a>
+          <!-- END POST 3 -->
+
+          <!-- VER MÁS -->
+          <div class="mt-auto">
+            <a href="./pages/error404.html" class="btn btn-danger w-100">ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SECCIÓN PRINCIPAL -->
+
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-light py-4">
+    <div class="container">
+      <div class="row align-items-start text-center text-md-start">
+
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <img src="./img/02 Logo Blanco.png" alt="TechBlog" width="180" class="mb-2">
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <h5 class="fw-bold text-center">Nuestras redes sociales</h5>
+          <div class="d-flex justify-content-center gap-3 mt-2">
+            <a href="./pages/error404.html" class="text-danger fs-5 text-center"><i class="fab fa-facebook"></i></a>
+            <a href="./pages/error404.html" class="text-danger fs-5 text-center"><i class="fab fa-instagram"></i></a>
+            <a href="./pages/error404.html" class="text-danger fs-5 text-center"><i class="fab fa-twitter"></i></a>
+            <a href="./pages/error404.html" class="text-danger fs-5 text-center"><i class="fab fa-youtube"></i></a>
+            <a href="./pages/error404.html" class="text-danger fs-5 text-center"><i class="fab fa-whatsapp"></i></a>
+            <a href="./pages/error404.html" class="text-danger fs-5 text-center"><i
+                class="fab fa-telegram-plane"></i></a>
+          </div>
+        </div>
+
+        <!-- Enlaces útiles -->
+        <div class="col-12 col-md-12 col-lg-4 mb-3">
+          <h5 class="fw-bold">Enlaces útiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-danger text-decoration-none"><i class="bi bi-house"></i> Inicio</a>
+            </li>
+            <li><a href="#" class="text-danger text-decoration-none">Políticas de privacidad</a></li>
+            <li><a href="#" class="text-danger text-decoration-none">Aviso legal</a></li>
+            <li><a href="#" class="text-danger text-decoration-none">Acerca de nosotros</a></li>
+            <li><a href="#" class="text-danger text-decoration-none">Contáctanos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-secondary">
+
+      <div class="text-center pb-3">
+        <small class="text-secondary">&copy; 2025 TechBlog. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
