@@ -6,7 +6,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Fondo */
 .bg-hero-inverse {
     background:
         radial-gradient(1000px 500px at 85% 15%, rgba(224, 6, 6, 0.14) 0%, rgba(224, 6, 6, 0) 60%),
@@ -14,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* Card formulario */
 .auth-card {
     background: rgba(40, 47, 50, .65);
     border: 1px solid rgba(255, 255, 255, .12);
@@ -25,7 +23,6 @@ body {
     box-shadow: 0 12px 30px rgba(0, 0, 0, .35);
 }
 
-/* Inputs */
 .form-control {
     background: rgba(0, 0, 0, .25);
     border: 1px solid rgba(255, 255, 255, .25);
@@ -41,7 +38,6 @@ body {
     box-shadow: 0 0 0 .2rem rgba(229, 30, 27, .25);
 }
 
-/* Botón rojo */
 .btn-brand {
     --brand: #C0191F;
     --brand-hover: #E51E1B;
@@ -55,7 +51,6 @@ body {
     border-color: var(--brand-hover);
 }
 
-/* Botones redes */
 .btn-google,
 .btn-facebook {
     background: rgba(255, 255, 255, .08);
@@ -75,7 +70,6 @@ body {
     text-align: left;
 }
 
-/* Modal glass */
 .modal-glass {
     background: rgba(40, 47, 50, .9);
     color: #f5f5f5;
@@ -87,7 +81,6 @@ body {
     filter: invert(1);
 }
 
-/* ==== Imagen derecha ==== */
 .login-visual {
     border-radius: 16px;
 }
@@ -98,7 +91,6 @@ body {
     height: 100%;
 }
 
-/* Desktop: imagen igual de alta que el login */
 @media (min-width: 992px) {
     .login-visual {
         height: 100%;
@@ -109,7 +101,6 @@ body {
     }
 }
 
-/* Mobile: centrado y sin scroll */
 @media (max-width: 991.98px) {
     .login-visual {
         height: clamp(220px, 35vh, 420px);
@@ -125,16 +116,13 @@ body {
     height: 100%;
 }
 
-/* ===== MOBILE (centrado y sin scroll extra) ===== */
 @media (max-width: 991.98px) {
 
-    /* menos padding vertical para evitar scroll */
     main.container {
         padding-top: 1rem !important;
         padding-bottom: 1rem !important;
     }
 
-    /* alto controlado del bloque de imagen; sin recortes */
     .login-visual {
         height: clamp(180px, 28vh, 320px);
     }
@@ -143,22 +131,18 @@ body {
         object-fit: contain;
     }
 
-    /* por si el card no se percibe centrado */
     .auth-card {
         margin-inline: auto;
     }
 }
 
-/* ===== DESKTOP (misma altura que el login) ===== */
 @media (min-width: 992px) {
 
-    /* en desktop ambas tarjetas ocupan el alto total de la fila */
     .auth-card,
     .login-visual {
         height: 100%;
     }
 
-    /* la imagen se recorta agradablemente para igualar altura */
     .login-visual-img {
         object-fit: cover;
     }
@@ -175,6 +159,5 @@ body {
 @media (min-width: 992px) {
     .login-visual {
         min-height: 100%;
-        /* iguala la altura del form en desktop */
     }
 }
