@@ -1,0 +1,140 @@
+ /* Reset */
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ /* Fondo + tipografía */
+ body {
+   background:
+     radial-gradient(1000px 500px at 85% 15%, rgba(224, 6, 6, 0.14) 0%, rgba(224, 6, 6, 0) 60%),
+     linear-gradient(435deg, #E51E1B 0%, #C0191F 18%, #7D1416 45%, #371211 70%, #000000 100%);
+   min-height: 100vh;
+   font-family: 'Roboto', sans-serif;
+ }
+
+ /* Contenedor central */
+ .page-central {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+ }
+
+ /* Caja error */
+ .error-wrapper {
+   max-width: 500px;
+   margin: auto;
+   padding: 30px;
+ }
+
+ /* Código error */
+ .error-code {
+   font-size: 3em;
+   font-weight: 700;
+   margin-bottom: 0;
+   line-height: 1;
+   color: white;
+ }
+
+ /* Mensaje */
+ .error-message {
+   font-size: 1.8em;
+   font-weight: 400;
+   color: white;
+   margin-bottom: 20px;
+ }
+
+ /* Texto explicativo */
+ .explanation-text {
+   font-size: 0.95em;
+   color: white;
+   line-height: 1.6;
+   margin-bottom: 25px;
+   max-width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ /* Botón */
+ .return-home .btn {
+   font-size: 1em;
+   padding: 12px 30px;
+   border-radius: 5px;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+   .error-code {
+     font-size: 2.5em;
+   }
+
+   .error-message {
+     font-size: 1.4em;
+   }
+
+   .explanation-text {
+     font-size: 0.9em;
+   }
+
+   .return-home .btn {
+     font-size: 0.9em;
+     padding: 10px 25px;
+   }
+ }
+
+ @media (max-width: 576px) {
+   .icon-container img {
+     width: 250px;
+   }
+
+   .error-code {
+     font-size: 2em;
+   }
+
+   .error-message {
+     font-size: 1.2em;
+   }
+
+   .explanation-text {
+     font-size: 0.85em;
+     padding: 0 10px;
+   }
+
+   .error-wrapper {
+     padding: 20px;
+   }
+ }
+
+ /* Animación Dino saltando */
+ .icon-container img {
+   animation: jump 1s ease-in-out infinite;
+ }
+
+ @keyframes jump {
+
+   0%,
+   100% {
+     transform: translateY(0);
+   }
+
+   30% {
+     transform: translateY(-25px);
+   }
+
+   /* sube */
+   50% {
+     transform: translateY(0);
+   }
+
+   /* baja */
+   70% {
+     transform: translateY(-15px);
+   }
+
+ }
