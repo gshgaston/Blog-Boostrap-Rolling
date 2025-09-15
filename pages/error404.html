@@ -4,53 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error 404 - Página no encontrada</title>
+    <title>TechBlog - Error 404 - Página no encontrada</title> 
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/01 Isotipo full color.png" type="image/x-icon"> 
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Enlace a tu archivo CSS Error 404 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/error404.css">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Domine&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
 </head>
 
-<body>
+<body class="error-bg d-flex justify-content-center align-items-center min-vh-100">
     <div class="container d-flex justify-content-center align-items-center min-vh-100 page-central">
         <div class="row w-100 justify-content-center">
             <div class="col-12 col-md-8 col-lg-6">
-
-                <div class="error-wrapper text-center">
-                    <div class="icon-container mb-4">
-                        <!-- PNG del dinosaurio -->
-                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/lindo-dinosaurio-tiene-signo-negro-blanco-error-404-illustration-svg-png-download-9708259.png"
-                            alt="">
-                    </div>
-
+                <div class="error-wrapper text-center"> <!-- Imagen Dino con animación -->
+                    <div class="icon-container mb-4"> <img
+                            src="https://cdni.iconscout.com/illustration/premium/thumb/lindo-dinosaurio-tiene-signo-negro-blanco-error-404-illustration-svg-png-download-9708259.png"
+                            alt="Error 404" class="img-fluid" style="max-width:350px;"> </div> <!-- Texto de error -->
                     <p class="error-code">ERROR 404</p>
                     <h1 class="error-message">Oops... Página no encontrada!</h1>
-
-                    <p class="explanation-text p-2">
-                        Lo sentimos, la página que buscas no existe o ha sido movida. Parece que nos hemos desconectado
-                        de lo que intentabas encontrar.
-                    </p>
-
-                    <div class="return-home mt-4">
-                        <a href="index.html" class="btn btn-dark">INICIO</a>
-                    </div>
+                    <p class="explanation-text p-2"> Lo sentimos, la página que buscas no existe o ha sido movida.
+                        Parece que nos hemos desconectado de lo que intentabas encontrar. </p> <!-- Botón volver -->
+                    <div class="return-home mt-4"> <a href="../index.html" class="btn btn-dark"> <i
+                                class="fas fa-home me-2"></i> INICIO </a> </div>
                 </div>
-
             </div>
         </div>
-    </div>
-
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcOdqrJ5s5uwpPkYv0tUoGmgL/Kk"
-        crossorigin="anonymous"></script>
+    </div> <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
