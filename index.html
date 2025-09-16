@@ -24,32 +24,32 @@
 
 <body style="font-family: 'Roboto', sans-serif; padding-top:95px;">
 
-<header>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-dark mx-lg-0 mx-auto" href="index.html">
-        <img src="img/01 Logo Full Color.png" alt="Logo de TechBlog" class="me-2" style="max-height: 50px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end text-lg-end text-center" id="navbarNav">
-        <ul class="navbar-nav me-lg-3 mx-auto">
-          <li class="nav-item"><a class="nav-link text-dark" href="index.html"><i class="fas fa-home"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="./pages/quienes-somos.html">QUIENES SOMOS</a></li>
-          <li class="nav-item"><a class="nav-link" href="./pages/galeria-de-img.html">GALERÍA DE IMÁGENES</a></li>
-          <li class="nav-item"><a class="nav-link" href="./pages/planes.html">SUSCRIPCIONES</a></li>
-          <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
-        </ul>
-        <a href="./pages/login.html" class="btn btn-danger d-lg-inline-block mx-lg-0 mx-auto">INICIAR SESIÓN</a>
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-dark mx-lg-0 mx-auto" href="index.html">
+          <img src="img/01 Logo Full Color.png" alt="Logo de TechBlog" class="me-2" style="max-height: 50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end text-lg-end text-center" id="navbarNav">
+          <ul class="navbar-nav me-lg-3 mx-auto">
+            <li class="nav-item"><a class="nav-link text-dark" href="index.html"><i class="fas fa-home"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/quienes-somos.html">QUIENES SOMOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/galeria-de-img.html">GALERÍA DE IMÁGENES</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/planes.html">SUSCRIPCIONES</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
+          </ul>
+          <a href="./pages/login.html" class="btn btn-danger d-lg-inline-block mx-lg-0 mx-auto">INICIAR SESIÓN</a>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- END NAVBAR -->
-</header>
+    </nav>
+    <!-- END NAVBAR -->
+  </header>
 
-<!-- SECCIÓN PRINCIPAL -->
+  <!-- SECCIÓN PRINCIPAL -->
   <!-- HERO SLIDER -->
   <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-inner">
@@ -113,7 +113,7 @@
       <!-- SIDEBAR + PUBLICIDAD -->
       <div class="col-lg-6 d-flex flex-column h-100">
         <div class="row flex-grow-1">
-         
+
           <!-- CATEGORÍAS -->
           <div class="col-lg-6">
             <div class="bg-white p-3 border h-100">
@@ -149,7 +149,8 @@
               <h6 class="text-danger fw-bold">BUSCADOR</h6>
               <p class="small">Encuentra el artículo que te interesa</p>
               <input type="text" class="form-control mb-2" placeholder="Título del artículo">
-              <input type="date" class="form-control mb-2">
+              <!-- Fecha con restricción estática -->
+              <input type="date" class="form-control mb-2" max="2025-09-16">
               <select class="form-select mb-2">
                 <option>Categoría</option>
                 <option>Developers</option>
@@ -281,7 +282,8 @@
           <ul class="list-unstyled">
             <li><a href="index.html" class="text-danger text-decoration-none"><i class="bi bi-house"></i> Inicio</a>
             </li>
-            <li><a href="/pages/privacidad.html" class="text-danger text-decoration-none">Políticas de privacidad</a></li>
+            <li><a href="/pages/privacidad.html" class="text-danger text-decoration-none">Políticas de privacidad</a>
+            </li>
             <li><a href="/pages/avisos-legales.html" class="text-danger text-decoration-none">Aviso legal</a></li>
             <li><a href="/pages/quienes-somos.html" class="text-danger text-decoration-none">Acerca de nosotros</a></li>
             <li><a href="/pages/contacto.html" class="text-danger text-decoration-none">Contáctanos</a></li>
